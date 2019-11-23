@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <title>TapSearch</title>
+    <link rel="stylesheet" type="text/css" href="style.css" id="jsbin-css">
+  </head>
+
+  <body>
+    <input type=file id='file' onchange="startRead()"/>
+    <div id="draghere" >Drop files here</div>
+    <div id="op"></div>
+    <script type="text/javascript" src="solve.js"></script>
+    <script type="text/javascript" src = "upl.js"></script>
+    <script src="https://static.jsbin.com/js/render/edit.js?4.1.7"></script>
+
+    <script>jsbinShowEdit && jsbinShowEdit({"static":"https://static.jsbin.com","root":"https://jsbin.com"});</script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-1656750-34', 'auto');
+        ga('require', 'linkid', 'linkid.js');
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+    </script>
+
+    <div id = "enter">
+      <fieldset>
+        <legend>Enter Text</legend>
+        <textarea id = "txt" rows = "5" cols = "50">
+        Enter The text here !
+        pls give /n/n for a paragraph change
+        </textarea>
+        <p>Click on Send to load the data</p>
+        <button type = "button" onclick = "search_input()">Send</button>
+        <button type = "button" onclick = "clear_all()">Clear</button>
+        <p id = "demo"></p>
+      </fieldset>
+    </div>
+
+    <div id = "search">
+      <fieldset>
+        <legend>Search a Word</legend>
+        <input id = "text1" placeholder = "Enter the word to search !" size = "30">
+        <br>
+        <p>Click on search to see matches</p>
+        <button type = "button" onclick = "search_output()">search</button>
+        <p>Found on</p>
+        <p id = "maps"> </p>
+      </fieldset>
+    </div>
+  </body>
+
+</html>

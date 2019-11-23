@@ -1,0 +1,38 @@
+#draghere{
+
+  width:300px;
+
+  height:100px;
+
+  background-color:rgba(221,214,155,0.4);
+
+  border:1px dashed black;
+
+  text-align:center;
+
+}
+
+#op{
+
+  width:300px;
+
+  height:300px;
+
+  overflow:auto;
+
+  background-color:rgba(221,214,221,0.3);
+
+  border:1px dashed black;
+
+}
+
+#enter{
+  position:absolute;
+  left:380px;
+  top:40px;
+}
+#search{
+  position:absolute;
+  left:880px;
+  top:40px;
+}
