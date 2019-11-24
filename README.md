@@ -15,10 +15,11 @@
    <li><img src = "https://github.com/ricksr/tapsearch/blob/master/images/1.png">ENTER TEXT</li>
     
   <li>click on <strong>"Send"</strong> button to run the algo and index it</li>
-  <li><img src = "">SEND</li>
+  
   <li>Then type any desired word and search using <strong>"search"</strong> button</li>
-  <li><img src = "">FIND</li>
+  <li><img src = "https://github.com/ricksr/tapsearch/blob/master/images/2.png">FIND</li>
   <li>click on <strong>"Clear"</strong> button to clear the mapping and local storage</li>
 </ul>
-**<img src = "">
+<p>Some outputs</p>
+**<img src = "https://github.com/ricksr/tapsearch/blob/master/images/3.png">
 *paragraphs can be only identified if you ENTER two new lines (\n\n) after one para end.
