@@ -1,3 +1,7 @@
+var str = ""
+var text = ""
+const set = new Set();
+
 document.getElementById('input-file')
   .addEventListener('change', getFile)
 
