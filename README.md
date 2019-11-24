@@ -1,5 +1,5 @@
 <h1>TapSearch</h1>
-
+<hr>
   This app helps you to add paragraphs** and index them
 
   then using search box , you can search for any particular <i>word of a paragraph</i>,
@@ -18,7 +18,7 @@
   
   <li>Then type any desired word and search using <strong>"search"</strong> button</li>
   
-  <img src = "https://github.com/ricksr/tapsearch/blob/master/images/2.png">
+  <img src = "https://github.com/ricksr/tapsearch/blob/master/images/2.png" >
   
   <li>click on <strong>"Clear"</strong> button to clear the mapping and local storage</li>
   
@@ -38,9 +38,11 @@
   <p> WHERE <i>KEY</i> is our <i>word of a paragraph</i> and in <i>LIST</i> we are storing the paragraph ranges</p>
   <p>we are a giving a rank , then using a set to store unique occurences of paras or INDEX</p>
   <p>and returning an array after processing it from SET OBJECT.</p>
+ 
+  <img src = "https://github.com/ricksr/tapsearch/blob/master/images/4.png" >
+  
   <h1>Outputs of large files</h1>
-  <img src = "https://github.com/ricksr/tapsearch/blob/master/images/4.png" width = 50px>
-  
-  <img src = "https://github.com/ricksr/tapsearch/blob/master/images/5.png">
-  
-  <img src = "https://github.com/ricksr/tapsearch/blob/master/images/6.png">
+  <hr>
+  <img src = "https://github.com/ricksr/tapsearch/blob/master/images/5.png" width = "70%">
+  <hr>
+  <img src = "https://github.com/ricksr/tapsearch/blob/master/images/6.png" width = "75%">
