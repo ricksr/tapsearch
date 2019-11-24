@@ -1,11 +1,17 @@
 var total;
 var map1;
 let str = [];
+var set2;
+var wrd = "";
+var out = [];
 
 function clear_all() {
   map1 = new Map();
   total = "";
+  out.length = 0;
+  wrd = "";
   document.getElementById("demo").innerHTML = total;
+  document.getElementById("maps").innerHTML = out;
 }
 
 function search_input() {
@@ -28,31 +34,45 @@ function search_input() {
           set1.add(words[j]);
       }
   }
-  //console.log(map1);
-  for (let item of set1) {
-      console.log(item);
-      for(let it of map1[item]){
-          console.log(it);
-      }
-  }
+  // DEBUG FROM HERE
+  // for (let item of set1) {
+  //     console.log(item);
+  //     for(let it of map1[item]){
+  //         console.log(it);
+  //     }
+  // }
 
 }
-var wrd;
+
 function search_output() {
   // wrd is word to search in top 10
+  
   wrd = document.getElementById("text1").value;
   wrd = wrd.toLowerCase();
+  var topTen = 0;
+  set2 = new Set();
+  out.length = 0;
+
   // no text
   if( (total.length == 0) || (total == undefined) ) {
     document.getElementById("maps").innerHTML = "Enter Text please"
   }
+
   // present
   else if(map1[wrd] != undefined) {
-    for(let item of map1[wrd]) {
-      alert("present in paragraph " + item);
+    for(let it of map1[wrd]) {
+      set2.add(it);
     }
-    document.getElementById("maps").innerHTML = map1[wrd];
+    for(let item of set2) {
+      if(topTen == 10) {
+        break;
+      }
+      out.push(item);
+      topTen = topTen + 1;
+    }
+    document.getElementById("maps").innerHTML = out;
   } 
+
   // word not found
   else {
     alert("word not found, please try another");
