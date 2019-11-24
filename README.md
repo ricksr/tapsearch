@@ -40,3 +40,7 @@
   <p>and returning an array after processing it from SET OBJECT.</p>
    
   <img src = "https://github.com/ricksr/tapsearch/blob/master/images/4.png">
+  
+  <img src = "https://github.com/ricksr/tapsearch/blob/master/images/5.png">
+  
+  <img src = "https://github.com/ricksr/tapsearch/blob/master/images/6.png">
