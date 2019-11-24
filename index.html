@@ -8,27 +8,15 @@
   </head>
 
   <body>
-    <input type=file id='file' onchange="startRead()"/>
-    <div id="draghere" >Drop files here</div>
-    <div id="op"></div>
+
     <script type="text/javascript" src="solve.js"></script>
     <script type="text/javascript" src = "upl.js"></script>
-    <script src="https://static.jsbin.com/js/render/edit.js?4.1.7"></script>
+    <div>
+     <label for="input-file">Specify a file:</label><br>
+     <input type="file" id="input-file">
+    </div>
 
-    <script>jsbinShowEdit && jsbinShowEdit({"static":"https://static.jsbin.com","root":"https://jsbin.com"});</script>
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-1656750-34', 'auto');
-        ga('require', 'linkid', 'linkid.js');
-        ga('require', 'displayfeatures');
-        ga('send', 'pageview');
-    </script>
-
+    <textarea id="content-target"></textarea>
     <div id = "enter">
       <fieldset>
         <legend>Enter Text</legend>
@@ -54,6 +42,37 @@
         <p id = "maps"> </p>
       </fieldset>
     </div>
+
+
+    <script>
+    document.getElementById('input-file')
+      .addEventListener('change', getFile)
+
+    function getFile(event) {
+      const input = event.target
+      if ('files' in input && input.files.length > 0) {
+        placeFileContent(
+          document.getElementById('content-target'),
+          input.files[0])
+      }
+    }
+
+    function placeFileContent(target, file) {
+      readFileContent(file).then(content => {
+        target.value = content
+      }).catch(error => console.log(error))
+    }
+
+    function readFileContent(file) {
+      const reader = new FileReader()
+      return new Promise((resolve, reject) => {
+        reader.onload = event => resolve(event.target.result)
+        reader.onerror = error => reject(error)
+        reader.readAsText(file)
+      })
+    }
+
+    </script>
   </body>
 
 </html>
