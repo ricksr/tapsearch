@@ -38,8 +38,8 @@
   <p> WHERE <i>KEY</i> is our <i>word of a paragraph</i> and in <i>LIST</i> we are storing the paragraph ranges</p>
   <p>we are a giving a rank , then using a set to store unique occurences of paras or INDEX</p>
   <p>and returning an array after processing it from SET OBJECT.</p>
-   
-  <img src = "https://github.com/ricksr/tapsearch/blob/master/images/4.png">
+  <h1>Outputs of large files</h1>
+  <img src = "https://github.com/ricksr/tapsearch/blob/master/images/4.png" width = 50px>
   
   <img src = "https://github.com/ricksr/tapsearch/blob/master/images/5.png">
   
