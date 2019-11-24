@@ -1,4 +1,4 @@
-<h2># tapsearch</h2>
+<h1>TapSearch</h1>
 
   This app helps you to add paragraphs** and index them
 
