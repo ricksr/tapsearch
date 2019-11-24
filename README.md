@@ -31,9 +31,9 @@
 *paragraphs can be only identified if you ENTER two new lines (\n\n) after one para end.
 
 <br>
-<br>
 
-<p>Code snippet</p>
+<hr>
+<p><h3>Code snippet</h3></p>
   <p> Here I'm using a <i>MAP < KEY  ,  LIST [ ] ></i></p>
   <p> WHERE <i>KEY</i> is our <i>word of a paragraph</i> and in <i>LIST</i> we are storing the paragraph ranges</p>
   <p>we are a giving a rank , then using a set to store unique occurences of paras or INDEX</p>
