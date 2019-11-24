@@ -12,13 +12,13 @@ textarea {
   position:absolute;
   left:380px;
   top:40px;
-  max-width:300px;
+  max-width:350px;
   word-wrap: break-word;
 }
 #search{
-  position:relative;
+  position:absolute;
   left:880px;
-  top:-50px;
+  top:40px;
   max-width:200px;
   word-wrap: break-word;
 }
