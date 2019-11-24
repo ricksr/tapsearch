@@ -15,10 +15,10 @@
    <li><img src = "https://imgur.com/a/9hc5WSz">ENTER TEXT</li>
     
   <li>click on <strong>"Send"</strong> button to run the algo and index it</li>
-
+  <li><img src = "">SEND</li>
   <li>Then type any desired word and search using <strong>"search"</strong> button</li>
-
+  <li><img src = "">FIND</li>
   <li>click on <strong>"Clear"</strong> button to clear the mapping and local storage</li>
 </ul>
-**
+**<img src = "">
 *paragraphs can be only identified if you ENTER two new lines (\n\n) after one para end.
