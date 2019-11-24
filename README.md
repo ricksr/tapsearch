@@ -34,9 +34,9 @@
 <br>
 
 <p>Code snippet</p>
-  Here I'm using a <i>MAP < KEY  ,  LIST [ ] ></i>
-  WHERE <i>KEY</i> is our <i>word of a paragraph</i> and in <i>LIST</i> we are storing the paragraph ranges
-  we are a giving a rank , then using a set to store unique occurences of paras or INDEX
-  and returning an array after processing it from SET OBJECT.
+  <p> Here I'm using a <i>MAP < KEY  ,  LIST [ ] ></i></p>
+  <p> WHERE <i>KEY</i> is our <i>word of a paragraph</i> and in <i>LIST</i> we are storing the paragraph ranges</p>
+  <p>we are a giving a rank , then using a set to store unique occurences of paras or INDEX</p>
+  <p>and returning an array after processing it from SET OBJECT.</p>
    
   <img src = "https://github.com/ricksr/tapsearch/blob/master/images/4.png">
