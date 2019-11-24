@@ -21,9 +21,9 @@
     <div id = "enter">
       <fieldset>
         <legend>Enter Text</legend>
-        <textarea id = "txt" rows = "5" cols = "50">
-        Enter The text here !
-        pls give /n/n for a paragraph change
+        <textarea id = "txt" >
+          Enter The text here !
+          pls give /n/n for a paragraph change
         </textarea>
         <p>Click on Send to load the data</p>
         <button type = "button" onclick = "search_input()">Send</button>
@@ -43,38 +43,38 @@
         <button type = "button" onclick = "search_output()">search</button>
 
       </fieldset>
-      <p>Found on</p>
+      <p>Found on Paragraphs</p>
       <p id = "maps" > </p>
     </div>
 
 
     <script>
-    document.getElementById('input-file')
-      .addEventListener('change', getFile)
+      document.getElementById('input-file')
+        .addEventListener('change', getFile)
 
-    function getFile(event) {
-      const input = event.target
-      if ('files' in input && input.files.length > 0) {
-        placeFileContent(
-          document.getElementById('content-target'),
-          input.files[0])
+      function getFile(event) {
+        const input = event.target
+        if ('files' in input && input.files.length > 0) {
+          placeFileContent(
+            document.getElementById('content-target'),
+            input.files[0])
+        }
       }
-    }
 
-    function placeFileContent(target, file) {
-      readFileContent(file).then(content => {
-        target.value = content
-      }).catch(error => console.log(error))
-    }
+      function placeFileContent(target, file) {
+        readFileContent(file).then(content => {
+          target.value = content
+        }).catch(error => console.log(error))
+      }
 
-    function readFileContent(file) {
-      const reader = new FileReader()
-      return new Promise((resolve, reject) => {
-        reader.onload = event => resolve(event.target.result)
-        reader.onerror = error => reject(error)
-        reader.readAsText(file)
-      })
-    }
+      function readFileContent(file) {
+        const reader = new FileReader()
+        return new Promise((resolve, reject) => {
+          reader.onload = event => resolve(event.target.result)
+          reader.onerror = error => reject(error)
+          reader.readAsText(file)
+        })
+      }
 
     </script>
   </body>
