@@ -12,7 +12,7 @@
   <li> you can add <strong>paragraphs**</strong> by your own or upload pdf or txt file and copy the paragraph
       from the text area section after extracting</li>
     
-    ![ENTER TEXT](https://imgur.com/wEv28SN)
+   <li><img src = "https://imgur.com/wEv28SN">ENTER TEXT</li>
     
   <li>click on <strong>"Send"</strong> button to run the algo and index it</li>
 
