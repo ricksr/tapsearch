@@ -5,15 +5,20 @@ label {
 textarea {
   width: 200px;
   height: 150px;
+  word-break: break-all;
 }
 
 #enter{
   position:absolute;
   left:380px;
   top:40px;
+  max-width:200px;
+  word-wrap: break-word;
 }
 #search{
   position:absolute;
   left:880px;
   top:40px;
+  max-width:200px;
+  word-wrap: break-word;
 }
