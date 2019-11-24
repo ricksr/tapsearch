@@ -11,7 +11,9 @@
 
   <li> you can add <strong>paragraphs**</strong> by your own or upload pdf or txt file and copy the paragraph
       from the text area section after extracting</li>
-
+    
+    ![ENTER TEXT](https://imgur.com/wEv28SN)
+    
   <li>click on <strong>"Send"</strong> button to run the algo and index it</li>
 
   <li>Then type any desired word and search using <strong>"search"</strong> button</li>
