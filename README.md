@@ -20,6 +20,17 @@
   <img src = "https://github.com/ricksr/tapsearch/blob/master/images/2.png">
   <li>click on <strong>"Clear"</strong> button to clear the mapping and local storage</li>
 </ul>
+
 <p>Some outputs</p>
+
 **<img src = "https://github.com/ricksr/tapsearch/blob/master/images/3.png">
 *paragraphs can be only identified if you ENTER two new lines (\n\n) after one para end.
+<br>
+<br>
+<p>Code snippet</p>
+  Here I'm using a MAP < KEY  ,  LIST [ ] >
+  WHERE KEY is our word and in LIST we are storing the paragraph ranges
+  we are a giving a rank , then using a set to store unique occurences of paras or INDEX
+  and returning an array after processing it from SET OBJECT.
+   
+  <img src = "https://github.com/ricksr/tapsearch/blob/master/images/4.png">
