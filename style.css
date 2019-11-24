@@ -11,14 +11,18 @@ textarea {
 #enter{
   position:absolute;
   left:380px;
-  top:40px;
+  top:70px;
   max-width:350px;
   word-wrap: break-word;
 }
 #search{
   position:absolute;
   left:880px;
-  top:40px;
+  top:70px;
   max-width:200px;
   word-wrap: break-word;
+}
+#low{
+  position:absolute;
+  bottom:10px;
 }
