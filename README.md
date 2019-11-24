@@ -12,7 +12,7 @@
   <li> you can add <strong>paragraphs**</strong> by your own or upload pdf or txt file and copy the paragraph
       from the text area section after extracting</li>
     
-   <li><img src = "https://imgur.com/a/9hc5WSz">ENTER TEXT</li>
+   <li><img src = "https://github.com/ricksr/tapsearch/blob/master/images/1.png">ENTER TEXT</li>
     
   <li>click on <strong>"Send"</strong> button to run the algo and index it</li>
   <li><img src = "">SEND</li>
